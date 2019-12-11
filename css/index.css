@@ -146,6 +146,9 @@ body {
   justify-content: space-between;
 }
 .navigation a {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inconsolata', monospace;
   text-decoration: none;
   color: red;
   border: 3px solid black;
@@ -157,6 +160,7 @@ body {
   background-color: white;
 }
 .heading {
+  font-family: 'Inconsolata', monospace;
   display: flex;
   justify-content: center;
   font-size: 3.5rem;
@@ -165,14 +169,12 @@ body {
   -webkit-text-fill-color: transparent;
   margin: 1%;
 }
-.heading:hover {
-  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
-}
 .alastor-pic {
   display: flex;
   justify-content: center;
+  padding: 1%;
 }
-.alastor-pic img:hover {
+.alastor-pic img {
   background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
 }
 .section2 {
@@ -180,8 +182,15 @@ body {
   justify-content: center;
 }
 .section2 #intro {
+  font-family: 'Inconsolata', monospace;
+  padding: 1%;
   border: 1px dotted pink;
   width: 25vw;
+}
+@media (max-width: 500px) {
+  .section2 #intro {
+    width: 90vw;
+  }
 }
 .section2 #intro h2 {
   display: flex;
@@ -205,11 +214,17 @@ body {
   justify-content: center;
 }
 .section3 #skills {
+  font-family: 'Inconsolata', monospace;
   width: 25vw;
   flex-direction: column;
   margin: 2%;
   border: 1px dotted pink;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .section3 #skills {
+    width: 90vw;
+  }
 }
 .section3 #skills h2 {
   font-size: 2.5rem;
@@ -232,6 +247,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .section3 #skills .alastor-gif {
+    width: 75vw;
+  }
+}
 .section3 #skills img {
   display: flex;
   justify-content: center;
@@ -241,4 +261,81 @@ body {
 }
 .section3 #skills:hover img {
   visibility: hidden;
+}
+.section4 {
+  display: flex;
+  justify-content: center;
+}
+.section4 #work-history {
+  font-family: 'Inconsolata', monospace;
+  width: 25vw;
+  flex-direction: column;
+  margin: 2%;
+  border: 1px dotted pink;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .section4 #work-history {
+    width: 90vw;
+  }
+}
+.section4 #work-history h2 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.section4 #work-history p {
+  font-size: 1.2rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section4 #work-history img {
+  max-width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.section4 #work-history:hover {
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+}
+.section4 #work-history:hover img {
+  visibility: hidden;
+}
+.section5 {
+  display: flex;
+  justify-content: center;
+}
+.section5 #contact {
+  font-family: 'Inconsolata', monospace;
+  width: 25vw;
+  flex-direction: column;
+  margin: 2%;
+  border: 1px dotted pink;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .section5 #contact {
+    width: 90vw;
+  }
+}
+.section5 #contact h2 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.section5 #contact p {
+  font-size: 1.2rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section5 #contact:hover {
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
 }

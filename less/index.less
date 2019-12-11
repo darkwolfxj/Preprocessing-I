@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,25 +92,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,115 +137,227 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
+
+// beginning of variables
+@font: 'Inconsolata', monospace;
+
 // beginning of mixins
-.background-image(){
-	background-image:url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+.background-image() {
+	background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
 }
-.gradient(){
-	background: -webkit-linear-gradient(black,#FF4646);
+
+.gradient() {
+	background: -webkit-linear-gradient(black, #FF4646);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}	
-.center(){
-	display:flex;
-	justify-content:center;
-	}
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+}
+
 // beginning of styles
 body {
-	width:80%;
-	margin:0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
+
 .navigation {
-	height:5vh;
+	height: 5vh;
 	.center();
-	align-content:top;
-	justify-content:space-between;
-	a{
-		text-decoration:none;
-		color:red;
-		border:3px solid black;
-		padding:1%;
-		border-radius:10px;
-		background-color:lightgrey;
+	align-content: top;
+	justify-content: space-between;
+
+	a {
+		.center();
+		font-family: @font;
+		text-decoration: none;
+		color: red;
+		border: 3px solid black;
+		padding: 1%;
+		border-radius: 10px;
+		background-color: lightgrey;
 	}
-	a:hover{
-		background-color:white;
+
+	a:hover {
+		background-color: white;
 	}
+
 }
-.heading{
+	
+
+.heading {
+	font-family: @font;
 	.center();
-	font-size:3.5rem;
+	font-size: 3.5rem;
 	.gradient();
-	margin:1%;
+	margin: 1%;
 }
-.heading:hover{
+
+.alastor-pic {
+	.center();
+	padding: 1%;
+}
+
+.alastor-pic img {
 	.background-image();
 }
-.alastor-pic{
+
+.section2 {
 	.center();
-}
-.alastor-pic img:hover{
-	.background-image();
-}
-.section2{
-	.center();
-	
-	#intro{
-		border:1px dotted pink;
-		width:25vw;
-		h2{
+
+	#intro {
+		font-family: @font;
+		padding: 1%;
+		border: 1px dotted pink;
+		width: 25vw;
+		@media (max-width:500px){
+			width:90vw;
+		}
+
+		h2 {
 			.center();
-			font-size:2.5rem;
+			font-size: 2.5rem;
 			.gradient();
 		}
-		p{
+
+		p {
 			.gradient();
-			font-size:1.2rem;
-		}	
+			font-size: 1.2rem;
+		}
 	}
-	#intro:hover{
+
+	#intro:hover {
 		.background-image();
-	}	
+	}
 }
-.section3{
+
+.section3 {
 	.center();
-	
-	#skills{
-		width:25vw;
-		flex-direction:column;
-		margin:2%;
-		border:1px dotted pink;
-		padding:1%;
-		h2{
-			font-size:2.5rem;
+
+	#skills {
+		font-family: @font;
+		width: 25vw;
+		flex-direction: column;
+		margin: 2%;
+		border: 1px dotted pink;
+		padding: 1%;
+		@media (max-width:500px){
+			width:90vw;
+		}
+
+		h2 {
+			font-size: 2.5rem;
 			.gradient();
 			.center();
 		}
-		p{
-			font-size:1.2rem;
+
+		p {
+			font-size: 1.2rem;
 			.gradient();
 		}
+
 		.alastor-gif {
-			max-width:100%;
-			padding:1%;
-			width:50vw;
+			max-width: 100%;
+			padding: 1%;
+			width: 50vw;
 			.center();
+			@media (max-width:500px){
+				width:75vw;
+			}
 		}
+
 		img {
 			.center();
 		}
 	}
-	#skills:hover{
+
+	#skills:hover {
 		img {
-			visibility:hidden;
+			visibility: hidden;
 		}
+
 		.background-image();
 	}
 }
-	
+
+.section4 {
+	.center();
+
+	#work-history {
+		font-family: @font;
+		width: 25vw;
+		flex-direction: column;
+		margin: 2%;
+		border: 1px dotted pink;
+		padding: 1%;
+		@media (max-width:500px){
+			width:90vw;
+		}
+
+		h2 {
+			font-size: 2.5rem;
+			.gradient();
+			.center();
+		}
+
+		p {
+			font-size: 1.2rem;
+			.gradient();
+		}
+
+		img {
+			max-width: 100%;
+			padding: 1%;
+			.center();
+		}
+	}
+
+	#work-history:hover {
+		.background-image();
+
+		img {
+			visibility: hidden;
+		}
+	}
+}
+
+.section5 {
+	.center();
+
+	#contact {
+		font-family: @font;
+		padding: 1%;
+		width: 25vw;
+		flex-direction: column;
+		margin: 2%;
+		border: 1px dotted pink;
+		padding: 1%;
+		@media (max-width:500px){
+			width:90vw;
+		}
+
+		h2 {
+			font-size: 2.5rem;
+			.gradient();
+			.center();
+		}
+
+		p {
+			font-size: 1.2rem;
+			.gradient();
+		}
+	}
+
+	#contact:hover {
+		.background-image();
+	}
+}
