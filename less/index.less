@@ -97,55 +97,68 @@ body {
 	.gradient();
 	margin:1%;
 }
+.heading:hover{
+	.background-image();
+}
 .alastor-pic{
 	.center();
+}
+.alastor-pic img:hover{
+	.background-image();
 }
 .section2{
 	.center();
 	
 	#intro{
 		border:1px dotted pink;
-		width:25vw;	
+		width:25vw;
+		h2{
+			.center();
+			font-size:2.5rem;
+			.gradient();
+		}
+		p{
+			.gradient();
+			font-size:1.2rem;
+		}	
 	}
-	h2{
-		.center();
-		font-size:2.5rem;
-		.gradient();
-	}
-	p{
-		.gradient();
-		font-size:1.2rem;
-	}
+	#intro:hover{
+		.background-image();
+	}	
 }
 .section3{
 	.center();
-}
-	}
+	
 	#skills{
-		border:1px dotted pink;
-		height:10vh;
 		width:25vw;
 		flex-direction:column;
 		margin:2%;
-		
+		border:1px dotted pink;
+		padding:1%;
+		h2{
+			font-size:2.5rem;
+			.gradient();
+			.center();
+		}
+		p{
+			font-size:1.2rem;
+			.gradient();
+		}
+		.alastor-gif {
+			max-width:100%;
+			padding:1%;
+			width:50vw;
+			.center();
+		}
+		img {
+			.center();
+		}
 	}
 	#skills:hover{
-		border:5px solid black;
+		img {
+			visibility:hidden;
+		}
 		.background-image();
-	
-	h2{
-		font-size:2.5rem;
-		.gradient();
-		.center();
-	}
-	p{
-		font-size:1.2rem;
-		.gradient();
-	}
-	img{
-		.center();
-		margin:1% auto;
-		height:30vh;
-		width:25vw;
 	}
 }
+	

@@ -165,9 +165,15 @@ body {
   -webkit-text-fill-color: transparent;
   margin: 1%;
 }
+.heading:hover {
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+}
 .alastor-pic {
   display: flex;
   justify-content: center;
+}
+.alastor-pic img:hover {
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
 }
 .section2 {
   display: flex;
@@ -177,7 +183,7 @@ body {
   border: 1px dotted pink;
   width: 25vw;
 }
-.section2 h2 {
+.section2 #intro h2 {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
@@ -185,14 +191,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.section2 p {
+.section2 #intro p {
   background: -webkit-linear-gradient(black, #FF4646);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.2rem;
 }
-.section3:hover {
-  border: 5px solid black;
+.section2 #intro:hover {
   background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
 }
 .section3 {
@@ -200,13 +205,13 @@ body {
   justify-content: center;
 }
 .section3 #skills {
-  border: 1px dotted pink;
-  height: 10vh;
   width: 25vw;
   flex-direction: column;
   margin: 2%;
+  border: 1px dotted pink;
+  padding: 1%;
 }
-.section3 h2 {
+.section3 #skills h2 {
   font-size: 2.5rem;
   background: -webkit-linear-gradient(black, #FF4646);
   -webkit-background-clip: text;
@@ -214,16 +219,26 @@ body {
   display: flex;
   justify-content: center;
 }
-.section3 p {
+.section3 #skills p {
   font-size: 1.2rem;
   background: -webkit-linear-gradient(black, #FF4646);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.section3 img {
+.section3 #skills .alastor-gif {
+  max-width: 100%;
+  padding: 1%;
+  width: 50vw;
   display: flex;
   justify-content: center;
-  margin: 1% auto;
-  height: 30vh;
-  width: 25vw;
+}
+.section3 #skills img {
+  display: flex;
+  justify-content: center;
+}
+.section3 #skills:hover {
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+}
+.section3 #skills:hover img {
+  visibility: hidden;
 }
