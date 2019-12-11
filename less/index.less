@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -56,4 +56,96 @@ table {
 html, body {
     height: 100%;
 }
-
+// beginning of mixins
+.background-image(){
+	background-image:url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+}
+.gradient(){
+	background: -webkit-linear-gradient(black,#FF4646);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}	
+.center(){
+	display:flex;
+	justify-content:center;
+	}
+// beginning of styles
+body {
+	width:80%;
+	margin:0 auto;
+}
+.navigation {
+	height:5vh;
+	.center();
+	align-content:top;
+	justify-content:space-between;
+	a{
+		text-decoration:none;
+		color:red;
+		border:3px solid black;
+		padding:1%;
+		border-radius:10px;
+		background-color:lightgrey;
+	}
+	a:hover{
+		background-color:white;
+	}
+}
+.heading{
+	.center();
+	font-size:3.5rem;
+	.gradient();
+	margin:1%;
+}
+.alastor-pic{
+	.center();
+}
+.section2{
+	.center();
+	
+	#intro{
+		border:1px dotted pink;
+		width:25vw;	
+	}
+	h2{
+		.center();
+		font-size:2.5rem;
+		.gradient();
+	}
+	p{
+		.gradient();
+		font-size:1.2rem;
+	}
+}
+.section3{
+	.center();
+}
+	}
+	#skills{
+		border:1px dotted pink;
+		height:10vh;
+		width:25vw;
+		flex-direction:column;
+		margin:2%;
+		
+	}
+	#skills:hover{
+		border:5px solid black;
+		.background-image();
+	
+	h2{
+		font-size:2.5rem;
+		.gradient();
+		.center();
+	}
+	p{
+		font-size:1.2rem;
+		.gradient();
+	}
+	img{
+		.center();
+		margin:1% auto;
+		height:30vh;
+		width:25vw;
+	}
+}

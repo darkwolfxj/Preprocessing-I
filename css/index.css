@@ -1,1 +1,229 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+.navigation {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-content: top;
+  justify-content: space-between;
+}
+.navigation a {
+  text-decoration: none;
+  color: red;
+  border: 3px solid black;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+.navigation a:hover {
+  background-color: white;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1%;
+}
+.alastor-pic {
+  display: flex;
+  justify-content: center;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+.section2 #intro {
+  border: 1px dotted pink;
+  width: 25vw;
+}
+.section2 h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section2 p {
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+}
+.section3:hover {
+  border: 5px solid black;
+  background-image: url('https://media2.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.gif?cid=790b76110ccd762aefa168b6a3f0f40ba9602c8731cd457a&rid=giphy.gif');
+}
+.section3 {
+  display: flex;
+  justify-content: center;
+}
+.section3 #skills {
+  border: 1px dotted pink;
+  height: 10vh;
+  width: 25vw;
+  flex-direction: column;
+  margin: 2%;
+}
+.section3 h2 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.section3 p {
+  font-size: 1.2rem;
+  background: -webkit-linear-gradient(black, #FF4646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section3 img {
+  display: flex;
+  justify-content: center;
+  margin: 1% auto;
+  height: 30vh;
+  width: 25vw;
+}
